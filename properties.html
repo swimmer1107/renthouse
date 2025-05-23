@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Properties - HomeRent</title>
+  <link rel="stylesheet" href="../CSS/properties.css" />
+  <script src="../JS/properties.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logoh.png" alt="HomeRent Logo" />
+      <span>RentHome</span>
+    </div>
+    <nav>
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/properties.html" class="active">Properties</a>
+      <a href="../HTML/cont.html">Contact</a>
+      <a href="#login" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quote-section">
+      <div class="quote-container">
+        <h1>"Home is the starting place of love, hope, and dreams."</h1>
+        <p>Find your perfect space and create memories that last a lifetime.</p>
+      </div>
+      <div
+        style="text-align: center; margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <input type="text" id="searchInput" placeholder="Search by location or title..." class="search-box"
+          style="padding: 0.6rem 1rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; width: 250px;" />
+        <button id="toggleBookingBtn" class="hero-booking-btn">Book Now</button>
+      </div>
+
+
+
+    </section>
+
+    <section class="property-listings">
+      <!-- property cards here -->
+      <div class="property-card" data-title="Cozy Cottage" data-location="Leipzig"
+        style="border: 2px solid #4a90e2; border-radius: 8px; width: 280px; padding: 1rem; background: #e6f0ff; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1501183638714-398f96e1f95b" alt="Cozy Cottage"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #004080; margin-top: 0.8rem;">Cozy Cottage</h3>
+        <p style="color: #333; font-weight: bold;">3 Beds • 2 Baths</p>
+        <p style="color: #555;">Price: $1,350/month</p>
+        <p style="font-style: italic; color: #666;">Located: Leipzig</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Urban Loft" data-location="downtown Cologne"
+        style="border: 2px solid #27ae60; border-radius: 8px; width: 280px; padding: 1rem; background: #e8f8f5; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Urban Loft"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #1e7d32; margin-top: 0.8rem;">Urban Loft</h3>
+        <p style="color: #333; font-weight: bold;">1 Bed • 1 Bath</p>
+        <p style="color: #555;">Price: $900/month</p>
+        <p style="font-style: italic; color: #666;">location: downtown Cologne</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Suburban Family Home" data-location="Frankfurt"
+        style="border: 2px solid #d35400; border-radius: 8px; width: 280px; padding: 1rem; background: #fef6e4; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Suburban Family Home"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #b24300; margin-top: 0.8rem;">Suburban Family Home</h3>
+        <p style="color: #333; font-weight: bold;">4 Beds • 3 Baths</p>
+        <p style="color: #555;">Price: $2,200/month</p>
+        <p style="font-style: italic; color: #666;">Location: Frankfurt</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Charming Bungalow" data-location="Stuttgart"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1505692794403-8f4c0f1f6f25" alt="Charming Bungalow"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Charming Bungalow</h3>
+        <p style="color: #333; font-weight: bold;">2 Beds • 1 Bath</p>
+        <p style="color: #555;">Price: $1,100/month</p>
+        <p style="font-style: italic; color: #666;">Location: Stuttgart </p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Modern Duplex" data-location="Frankfurt"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Modern Duplex"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Modern Duplex</h3>
+        <p style="color: #333; font-weight: bold;">3 Beds • 2 Baths</p>
+        <p style="color: #555;">Price: $1,700/month</p>
+        <p style="font-style: italic; color: #666;">Location: Frankfurt</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Spacious Villa" data-location="Munich"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="Spacious Villa"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Spacious Villa</h3>
+        <p style="color: #333; font-weight: bold;">4 Beds • 3 Baths</p>
+        <p style="color: #555;">Price: $2,800/month</p>
+        <p style="font-style: italic; color: #666;">Location: Munich</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Penthouse Suite" data-location="Cologne"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Penthouse Suite"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Penthouse Suite</h3>
+        <p style="color: #333; font-weight: bold;">3 Beds • 2.5 Baths</p>
+        <p style="color: #555;">Price: $3,200/month</p>
+        <p style="font-style: italic; color: #666;">Location: Cologne</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Eco-Friendly House" data-location="Freiburg"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Eco-Friendly House"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Eco-Friendly House</h3>
+        <p style="color: #333; font-weight: bold;">2 Beds • 2 Baths</p>
+        <p style="color: #555;">Price: $1,400/month</p>
+        <p style="font-style: italic; color: #666;">Location: Freiburg</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Suburban Retreat" data-location="Hannover"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Suburban Retreat"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Suburban Retreat</h3>
+        <p style="color: #333; font-weight: bold;">3 Beds • 2 Baths</p>
+        <p style="color: #555;">Price: $1,600/month</p>
+        <p style="font-style: italic; color: #666;">Location: Hannover</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-title="Downtown Apartment" data-location="Berlin"
+        style="border: 2px solid #8e44ad; border-radius: 8px; width: 280px; padding: 1rem; background: #f5e6fc; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1560448070-c9f99934c776" alt="Downtown Apartment"
+          style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px;" />
+        <h3 style="color: #5e2a86; margin-top: 0.8rem;">Downtown Apartment</h3>
+        <p style="color: #333; font-weight: bold;">1 Bed • 1 Bath</p>
+        <p style="color: #555;">Price: $950/month</p>
+        <p style="font-style: italic; color: #666;">Location: Berlin</p>
+        <a href="#" class="view-more-btn">View Details</a>
+      </div>
+
+
+    </section>
+  </main>
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Contact Us</h2>
+        <p>Email: support@homerent.com</p>
+        <p>Phone: +49 123 456 789</p>
+        <p>Address: DELHI ,INDIA</p>
+      </div>
+      <div class="footer-right">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+              style="width:32px; height:32px;" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="32" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" /></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 HomeRent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <h2>Book a Property</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+49 123 456 7890" required />
+        </div>
+        <div class="form-group">
+          <label for="property">Select Property:</label>
+          <select id="property" name="property" required>
+            <option value="">-- Select --</option>
+            <option value="Charming Bungalow">Charming Bungalow - Stuttgart</option>
+            <option value="Modern Apartment">Modern Apartment - Berlin</option>
+            <option value="Family Home">Family Home - Hamburg</option>
+            <option value="Luxury Villa">Luxury Villa - Düsseldorf</option>
+            <!-- Add more if needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="movein">Move-in Date:</label>
+          <input type="date" id="movein" name="movein" required />
+        </div>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModalBtn">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p style="text-align: center; margin-top: 1rem;">
+        Don't have an account?
+        <a href="#" id="openSignupLink">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignupModalBtn">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p style="text-align: center; margin-top: 1rem;">
+        Already have an account?
+        <a href="#" id="backToLoginLink">Login</a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
