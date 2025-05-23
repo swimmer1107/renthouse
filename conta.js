@@ -50,3 +50,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".contact-form");
+  const greetingPopup = document.getElementById("greetingPopup");
+  const closeGreetingPopup = document.getElementById("closeGreetingPopup");
+
+  contactForm?.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Show the custom popup
+    greetingPopup.style.display = "block";
+
+    // Optional: reset the form
+    contactForm.reset();
+  });
+
+  // Close popup on clicking X
+  closeGreetingPopup?.addEventListener("click", () => {
+    greetingPopup.style.display = "none";
+  });
+
+  // Close popup when clicking outside the content box
+  window.addEventListener("click", (e) => {
+    if (e.target === greetingPopup) {
+      greetingPopup.style.display = "none";
+    }
+  });
+});
+
