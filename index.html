@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeRent - Find Your Perfect Home</title>
+  <link rel="stylesheet" href="../CSS/house.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../JS/house.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logoh.png" alt="HomeRent Logo" />
+      <span>RentHome</span>
+    </div>
+    <nav>
+      <a href="../HTML/index.html" id="homeLink">Home</a>
+      <a href="../HTML/properties.html">Properties</a>
+      <a href="../HTML/cont.html">Contact</a>
+      <a href="#login" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Find Your Dream Home</h1>
+    <p>Explore the best rentals in your city</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by location or title..." class="search-box" />
+    </div>
+  </section>
+
+  <section id="propertiesSection"></section>
+
+  <section class="listings">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7" alt="Modern Apartment" />
+      <div class="card-content">
+        <h3>Modern Apartment</h3>
+        <p>2 Beds • 1 Bath • $1,200/month</p>
+        <p>Location: Berlin</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="Family Home" />
+      <div class="card-content">
+        <h3>Family Home</h3>
+        <p>3 Beds • 2 Baths • $1,800/month</p>
+        <p>Location: Hamburg</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="stlf.jpeg" alt="Studio Loft" />
+      <div class="card-content">
+        <h3>Studio Loft</h3>
+        <p>1 Bed • 1 Bath • $900/month</p>
+        <p>Location: Munich</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Luxury Villa" />
+      <div class="card-content">
+        <h3>Luxury Villa</h3>
+        <p>4 Beds • 3 Baths • $2,500/month</p>
+        <p>Location: Düsseldorf</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <h2>Why Choose Us?</h2>
+    <p>Discover unmatched comfort, convenience, and top-quality facilities in all our rental properties.</p>
+
+    <div class="features-list">
+      <div class="feature-item">
+        <h3>Modern Amenities</h3>
+        <p>Fully equipped kitchens, high-speed internet, air conditioning, and smart home systems.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Prime Locations</h3>
+        <p>Close to public transport, shopping centers, parks, and schools for your convenience.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Secure & Safe</h3>
+        <p>24/7 security, surveillance cameras, and secure access to ensure your peace of mind.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Flexible Lease Terms</h3>
+        <p>Options for short-term and long-term leases tailored to your needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-info">
+    <h2>Ready to Secure Your New Home?</h2>
+    <p>Our streamlined booking process ensures you can reserve your perfect rental quickly and easily.</p>
+    <ul>
+      <li><strong>Simple & Fast:</strong> Fill out your details in a few steps.</li>
+      <li><strong>Flexible Options:</strong> Choose your move-in date and property.</li>
+      <li><strong>Secure & Private:</strong> Your information is handled confidentially.</li>
+    </ul>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <button id="toggleBookingBtn" class="booking-btn">Book a Property</button>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <h2>Book a Property</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+49 123 456 7890" required />
+        </div>
+        <div class="form-group">
+          <label for="property">Select Property:</label>
+          <select id="property" name="property" required>
+            <option value="" disabled selected>Choose a property</option>
+            <option value="Modern Apartment">Modern Apartment - Berlin</option>
+            <option value="Family Home">Family Home - Hamburg</option>
+            <option value="Studio Loft">Studio Loft - Munich</option>
+            <option value="Luxury Villa">Luxury Villa - Düsseldorf</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="movein">Move-in Date:</label>
+          <input type="date" id="movein" name="movein" required />
+        </div>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeLoginModalBtn" class="close">&times;</span>
+      <h2>Login to HomeRent</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="password" placeholder="Enter password" required />
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+          New user? <a href="#" id="openSignupLink" style="color: #007BFF; text-decoration: underline;">Sign up here</a>
+        </p>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign-Up Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span id="closeSignupModalBtn" class="close">&times;</span>
+      <h2>Create an Account</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name:</label>
+          <input type="text" id="signupName" name="signupName" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" name="signupEmail" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" name="signupPassword" placeholder="Create a password" required />
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@homerent.com | Phone: +49 123 456 7890</p>
+  </section>
+
+  <footer>
+    <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a></li>
+            <li><a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+        </ul>
+    &copy; 2025 HomeRent. All rights reserved.
+  </footer>
+  <div id="popupMessage" class="popup-message">Login successful!</div>
+
+</body>
+
+</html>
