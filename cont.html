@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - HomeRent</title>
+  <link rel="stylesheet" href="../CSS/cont.css" />
+  <script src="../JS/conta.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../HTML/logoh.png" alt="HomeRent Logo" style="height:40px; vertical-align: middle; border-radius: 50%" />
+      <span>HomeRent</span>
+    </div>
+    <div class="nav-links">
+      <a href="../HTML/index.html">Home</a>
+      <a href="../HTML/properties.html">Properties</a>
+      <a href="../HTML/cont.html" class="active">Contact</a>
+      <a href="#" id="loginLink">Login</a>
+    </div>
+  </nav>
+
+  <section class="contact-hero">
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you. Reach out to us with any questions or comments.</p>
+  </section>
+
+  <div class="contact-container">
+    <h2>Contact Form</h2>
+    <form class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+49 123 456 789" />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
+  <footer>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i>
+          LinkedIn</a></li>
+      <li><a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+    </ul>
+    &copy; 2025 HomeRent. All rights reserved.
+  </footer>
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeLoginModalBtn" class="close">&times;</span>
+      <h2>Login to HomeRent</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="password" placeholder="Enter password" required />
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+          New user?
+          <a href="#" id="openSignupLink" style="color: #007BFF; text-decoration: underline;">Sign up here</a>
+        </p>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign-Up Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span id="closeSignupModalBtn" class="close">&times;</span>
+      <h2>Create Your Account</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name:</label>
+          <input type="text" id="signupName" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" name="password" placeholder="Create password" required />
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+          Already have an account?
+          <a href="#" id="backToLoginLink" style="color: #007BFF; text-decoration: underline;">Login here</a>
+        </p>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
