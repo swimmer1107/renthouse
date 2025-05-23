@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url('../HTML/conta.png') no-repeat center center fixed;
+  background: url('conta.png') no-repeat center center fixed;
   background-size: cover;
   /* Keep your existing styles */
   color: #333;
