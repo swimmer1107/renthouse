@@ -154,7 +154,7 @@ footer &copy {
 
 .hero {
   position: relative;
-  background: url('../HTML/backg.png') no-repeat center center/cover;
+  background: url('backg.png') no-repeat center center/cover;
   color: white;
   padding: 6rem 2rem 4rem;
   /* More bottom padding for search bar */
